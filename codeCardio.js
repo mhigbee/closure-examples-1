@@ -67,3 +67,22 @@ function sum() {
     return total
 
 }
+
+// Functions 3.1
+// This function should return true if there are an equal number of "x"s and "o"s. Inside your for loop, you will need to check if the str[i] is either an "x" or an "o". If it is an "x", push it to the arrayX, and if it is an "o", push it to the arrayO.
+
+
+var str = 'oxooxxxxooxo'
+
+function exOh(str) {
+    var  arrayX = [],
+        arrayO = [];
+
+    for(var i = 0; i < str.length; i++){
+        (str[i] === 'x') ? arrayX.push(str[i]) : arrayO.push(str[i])
+    }
+
+    if(arrayX.length === arrayO.length) return true;
+    return false
+
+}
